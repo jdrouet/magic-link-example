@@ -1,0 +1,35 @@
+{
+  "name": "omts-magic-link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "source/index.js",
+  "scripts": {
+    "migrate": "migrate:latest",
+    "start": "node source/index.js",
+    "test": "mocha"
+  },
+  "engines": {
+    "node": "8.1.0",
+    "npm": "5.3.0"
+  },
+  "keywords": [],
+  "author": "Jeremie Drouet <jeremie.drouet@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "boom": "^5.2.0",
+    "express": "^4.15.4",
+    "express-jwt": "^5.3.0",
+    "joi": "^10.6.0",
+    "jsonwebtoken": "^8.0.0",
+    "knex": "^0.13.0",
+    "nodemailer": "^4.1.0",
+    "pg": "^7.3.0",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.1"
+  }
+}
