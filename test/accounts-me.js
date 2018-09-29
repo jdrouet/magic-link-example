@@ -14,7 +14,7 @@ describe('GET /api/accounts/me', () => {
     .generate({ id: 1 })
     .then((token) => Object.assign(this, { token })));
 
-  it('should answer 200', () => {
+  it('should answer 200 with validtoken', () => {
     return request
       .get('/api/accounts/me')
       .query({ token: this.token })
@@ -24,7 +24,7 @@ describe('GET /api/accounts/me', () => {
       });
   });
 
-  it('should answer 200', () => {
+  it('should answer 401 without token', () => {
     return request
       .get('/api/accounts/me')
       .expect(401);
