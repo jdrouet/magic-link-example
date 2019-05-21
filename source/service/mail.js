@@ -2,7 +2,7 @@
 const nodemailer = require('nodemailer');
 const config = require('../config');
 
-const transport = nodemailer.createTransport(config.mail.url);
+const transporter = nodemailer.createTransport(config.mail.url);
 
 const create = (options) =>
   transporter.sendMail(options);
